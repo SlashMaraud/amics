@@ -1,4 +1,3 @@
-
 name: Actualizar lista AMICS desde IPFS
 
 on:
@@ -110,80 +109,4 @@ jobs:
             git commit -m "Actualizar lista AMICS desde IPFS"
             git push
           fi
-
-name: Actualizar lista AMICS desde IPFS
-
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: "17 * * * *"
-
-permissions:
-  contents: write
-
-concurrency:
-  group: actualizar-amics
-  cancel-in-progress: false
-
-jobs:
-  actualizar:
-    runs-on: ubuntu-latest
-    timeout-minutes: 20
-
-    steps:
-      - name: Descargar repositorio
-        uses: actions/checkout@v4
-
-      - name: Instalar dependencias
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y curl wget jq
-
-      - name: Instalar IPFS Kubo desde GitHub
-        run: |
-          KUBO_VERSION="v0.38.2"
-          ARCHIVO="kubo_${KUBO_VERSION}_linux-amd64.tar.gz"
-          URL="https://github.com/ipfs/kubo/releases/download/${KUBO_VERSION}/${ARCHIVO}"
-
-          curl -fL --retry 3 --retry-delay 5 \
-            "$URL" -o "$ARCHIVO"
-
-          tar -xzf "$ARCHIVO"
-          cd kubo
-          sudo bash install.sh
-          ipfs version
-
-      - name: Inicializar nodo IPFS
-        run: |
-          ipfs init --profile=server
-
-      - name: Arrancar nodo IPFS
-        run: |
-          ipfs daemon --enable-gc > ipfs-daemon.log 2>&1 &
-          echo $! > ipfs-daemon.pid
-
-          for i in $(seq 1 30); do
-            if ipfs id >/dev/null 2>&1; then
-              echo "Nodo IPFS iniciado."
-              exit 0
-            fi
-            sleep 2
-          done
-
-          cat ipfs-daemon.log
-          exit 1
-
-      - name: Esperar conexión con la red IPFS
-        run: |
-          echo "Esperando peers..."
-
-          for i in $(seq 1 24); do
-            PEERS=$(ipfs swarm peers | wc -l)
-            echo "Intento $i: $PEERS peers"
-
-            if [ "$PEERS" -gt 0 ]; then
-              echo "Conexión establecida."
-              break
-            fi
-
-            
+          
