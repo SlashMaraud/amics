@@ -78,13 +78,6 @@ jobs:
 
           ipfs swarm peers
 
-      - name: Comprobar resolución IPNS de ELCANO
-        run: |
-          IPNS="k51qzi5uqu5dh5qej4b9wlcr5i6vhc7rcfkekhrxqek5c9lk6gdaiik820fecs"
-
-          echo "Resolviendo IPNS de ELCANO..."
-          ipfs name resolve --nocache "/ipns/$IPNS"
-
       - name: Ejecutar actualizador AMICS
         run: |
           python3 actualizar_amics.py
