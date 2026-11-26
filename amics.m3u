@@ -49,17 +49,17 @@ acestream://132a0f3020633bc08b61286ec8b7b531eb28b955
 #EXTINF:-1 tvg-id="DAZN F1 HD" tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" group-title="FORMULA 1",DAZN F1 720p *
 acestream://c2b7de264e220f56fc5f10d627500d26eecedcd1
 #EXTINF:-1 tvg-id="DAZN F1 HD" tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" group-title="FORMULA 1",DAZN F1 720p **
-acestream://1b98170e93036a03a25938b3b38548af61397701
-#EXTINF:-1 tvg-id="DAZN F1 HD" tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" group-title="FORMULA 1",DAZN F1 720p **
 acestream://2b926811c8049c77441c5170e637ddad827bc06c
+#EXTINF:-1 tvg-id="DAZN F1 HD" tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" group-title="FORMULA 1",DAZN F1 720p **
+acestream://1b98170e93036a03a25938b3b38548af61397701
 #EXTINF:-1 tvg-id="DAZN F1 HD" tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" group-title="FORMULA 1",DAZN F1 1080p *
 acestream://180abbfa8f499a7cb9175cc42a63c3a78ef2d57c
+#EXTINF:-1 tvg-id="DAZN F1 HD" tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" group-title="FORMULA 1",DAZN F1 1080p **
+acestream://d479e645152f198332e70a4c8146d9cd15bcb825
 #EXTINF:-1 tvg-id="DAZN F1 HD" tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" group-title="FORMULA 1",DAZN F1 1080p **
 acestream://5660a09c63bf3c0370fcebf893a14aa83d4714ca
 #EXTINF:-1 tvg-id="DAZN F1 HD" tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" group-title="FORMULA 1",DAZN F1 1080p **
 acestream://f8cc362318bc6b667dd6ba90969e3b34675c9a85
-#EXTINF:-1 tvg-id="DAZN F1 HD" tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" group-title="FORMULA 1",DAZN F1 1080p **
-acestream://d479e645152f198332e70a4c8146d9cd15bcb825
 #EXTINF:-1 tvg-id="LaLiga TV Hypermotion HD" tvg-logo="https://i.ibb.co/CBdGc9f/hypermotion1.png" group-title="HYPERMOTION",LaLiga TV Hypermotion 720p *
 acestream://fcddd76b455039d30ce65c2e1e41e3b2acc369fc
 #EXTINF:-1 tvg-id="LaLiga TV Hypermotion HD" tvg-logo="https://i.ibb.co/CBdGc9f/hypermotion1.png" group-title="HYPERMOTION",LaLiga TV Hypermotion 1080p *
@@ -79,9 +79,9 @@ acestream://edb799b99bc8a970d9347a48e66590059b50a18a
 #EXTINF:-1 tvg-id="DAZN LaLiga HD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-es.png" group-title="LA LIGA",DAZN LaLiga 1080p *
 acestream://529f5abd2c87209f69c0727ade740ff6f160be88
 #EXTINF:-1 tvg-id="DAZN LaLiga HD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-es.png" group-title="LA LIGA",DAZN LaLiga 1080p **
-acestream://6b6da9855c5d4c090a5bf5eca3c55f4f3da451f5
-#EXTINF:-1 tvg-id="DAZN LaLiga HD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-es.png" group-title="LA LIGA",DAZN LaLiga 1080p **
 acestream://8d597ac81ee16689b77addcb1c9d1821303c1cf9
+#EXTINF:-1 tvg-id="DAZN LaLiga HD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-es.png" group-title="LA LIGA",DAZN LaLiga 1080p **
+acestream://6b6da9855c5d4c090a5bf5eca3c55f4f3da451f5
 #EXTINF:-1 tvg-id="DAZN LaLiga HD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-es.png" group-title="LA LIGA",DAZN LaLiga 1080p **
 acestream://888a259c9806b9130bdaf704f1d3b2d137c0e99b
 #EXTINF:-1 tvg-id="DAZN LaLiga 2 HD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-2-es.png" group-title="LA LIGA",DAZN LaLiga 2 1080p *
@@ -99,9 +99,9 @@ acestream://ecafc760a1818e11a39fe4a537d5d19c4feeb843
 #EXTINF:-1 tvg-id="M+ LaLiga HD" tvg-logo="https://i.ibb.co/yfV1Q8n/liga.png" group-title="LA LIGA",M+ LaLiga 1080p **
 acestream://a4fe8090a393f0c441d252bdabbddffeb5d0d326
 #EXTINF:-1 tvg-id="M+ LaLiga HD" tvg-logo="https://i.ibb.co/yfV1Q8n/liga.png" group-title="LA LIGA",M+ LaLiga 1080p **
-acestream://f896237afb70f83ac1f0ca64b538aa1c0c1f9718
-#EXTINF:-1 tvg-id="M+ LaLiga HD" tvg-logo="https://i.ibb.co/yfV1Q8n/liga.png" group-title="LA LIGA",M+ LaLiga 1080p **
 acestream://cd2a4796a4bf76bb8b61dd4eddc63eb7395e218b
+#EXTINF:-1 tvg-id="M+ LaLiga HD" tvg-logo="https://i.ibb.co/yfV1Q8n/liga.png" group-title="LA LIGA",M+ LaLiga 1080p **
+acestream://f896237afb70f83ac1f0ca64b538aa1c0c1f9718
 #EXTINF:-1 tvg-id="M+ LaLiga 2 HD" tvg-logo="https://i.ibb.co/Tc97zSb/liga2.png" group-title="LA LIGA",M+ LaLiga 2 1080p **
 acestream://8a97bd922deed4f88a6e87a730d3ed4f8867851a
 #EXTINF:-1 tvg-id="M+ LaLiga 2 HD" tvg-logo="https://i.ibb.co/Tc97zSb/liga2.png" group-title="LA LIGA",M+ LaLiga 2 *
@@ -229,9 +229,9 @@ acestream://cf9186902e798bf1256dab57127a2c6390af1f02
 #EXTINF:-1 tvg-id="Telecinco HD" tvg-logo="https://i.ibb.co/81wJ3GH/telecinco.png" group-title="TDT",Telecinco 1080p **
 acestream://4201cc207063f2ab9708b6a68ec6f820cbdb9782
 #EXTINF:-1 group-title="DEPORTES",A Punt 1080p *
-acestream://52732c9aa21dcbf8602b354bbc09274ed7b89878
-#EXTINF:-1 group-title="DEPORTES",A Punt 1080p *
 acestream://7d7df6d636f90879b3585b0314249896e80d8c6b
+#EXTINF:-1 group-title="DEPORTES",A Punt 1080p *
+acestream://52732c9aa21dcbf8602b354bbc09274ed7b89878
 #EXTINF:-1 group-title="DEPORTES",A Punt 1080p **
 acestream://86598061ee84d3eda0026f04f9f7cc55fb4f895a
 #EXTINF:-1 group-title="DEPORTES",A Punt 1080p **
@@ -269,13 +269,13 @@ acestream://b3d78787faa84fdfa4dd2593480e9bb82a4c067e
 #EXTINF:-1 tvg-id="DAZN MotoGP" tvg-logo="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1772006365-dazn-motogp-699eaba85423e.jpg" group-title="MOTOGP",Dazn MotoGP 720p **
 acestream://0ede54943cb9471a6a0c66417f2fb54c5c457873
 #EXTINF:-1 tvg-id="DAZN MotoGP" tvg-logo="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1772006365-dazn-motogp-699eaba85423e.jpg" group-title="MOTOGP",Dazn MotoGP 1080p *
-acestream://aaf8f939186264a31449c5e31ebf424965b0369f
-#EXTINF:-1 tvg-id="DAZN MotoGP" tvg-logo="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1772006365-dazn-motogp-699eaba85423e.jpg" group-title="MOTOGP",Dazn MotoGP 1080p *
 acestream://d7952947a5490e9760ffdc08431659071513e3d6
-#EXTINF:-1 tvg-id="DAZN MotoGP" tvg-logo="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1772006365-dazn-motogp-699eaba85423e.jpg" group-title="MOTOGP",Dazn MotoGP 1080p **
-acestream://da0e753297be3820bab96bb472bd9d2a148d10c1
+#EXTINF:-1 tvg-id="DAZN MotoGP" tvg-logo="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1772006365-dazn-motogp-699eaba85423e.jpg" group-title="MOTOGP",Dazn MotoGP 1080p *
+acestream://aaf8f939186264a31449c5e31ebf424965b0369f
 #EXTINF:-1 tvg-id="DAZN MotoGP" tvg-logo="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1772006365-dazn-motogp-699eaba85423e.jpg" group-title="MOTOGP",Dazn MotoGP 1080p **
 acestream://ee6338ddc4fba29bb800769ed714afb825ab26eb
+#EXTINF:-1 tvg-id="DAZN MotoGP" tvg-logo="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1772006365-dazn-motogp-699eaba85423e.jpg" group-title="MOTOGP",Dazn MotoGP 1080p **
+acestream://da0e753297be3820bab96bb472bd9d2a148d10c1
 #EXTINF:-1 group-title="MOTOGP",luz *
 acestream://7a52858923134ab635994a0064ebda92253d6c68
 #EXTINF:-1 group-title="MOTOGP",luz **
@@ -283,9 +283,9 @@ acestream://9ca73530d97825dab0cb1fb959f5e1677d8f0cef
 #EXTINF:-1 tvg-logo="https://espnpressroom.com/us/files/2023/02/New-NBA-Logo.png" group-title="NBA",NBA ESPN 720p *
 acestream://cb5a1f48efe2c30db178955bdc2fddf89d547ab4
 #EXTINF:-1 tvg-logo="https://www.vhv.rs/dpng/d/431-4310509_nba-league-pass-logo-png-transparent-nba-league.png" group-title="NBA",NBA League Pass 1080p *
-acestream://9821bfd262dd41a791b9cb5175314fa227dc139e
-#EXTINF:-1 tvg-logo="https://www.vhv.rs/dpng/d/431-4310509_nba-league-pass-logo-png-transparent-nba-league.png" group-title="NBA",NBA League Pass 1080p *
 acestream://e95c5979ab7b798ca43e29a8e4a6923638980749
+#EXTINF:-1 tvg-logo="https://www.vhv.rs/dpng/d/431-4310509_nba-league-pass-logo-png-transparent-nba-league.png" group-title="NBA",NBA League Pass 1080p *
+acestream://9821bfd262dd41a791b9cb5175314fa227dc139e
 #EXTINF:-1 tvg-logo="https://www.vhv.rs/dpng/d/431-4310509_nba-league-pass-logo-png-transparent-nba-league.png" group-title="NBA",NBA League Pass 1080p *
 acestream://181701bdaa643087bf99bf9916ede42df6eaf543
 #EXTINF:-1 tvg-logo="https://www.vhv.rs/dpng/d/431-4310509_nba-league-pass-logo-png-transparent-nba-league.png" group-title="NBA",NBA League Pass 1080p **
@@ -299,13 +299,13 @@ acestream://147223ebf9f6114070afa907d53871717007b0c1
 #EXTINF:-1 group-title="TOROS",Onetoro TV 1080p *
 acestream://d515fddc06239e9fe1595990a7668de933a4892f
 #EXTINF:-1 group-title="UFC",UFC *
-acestream://a5a1d20e36cf6bdad0f549606d283690d639a5b9
+acestream://b6da3c2260401aebfc57fe1873eb19b82972546f
 #EXTINF:-1 group-title="UFC",UFC *
-acestream://0aa6f665d462d8b6f3f184bfdfe1d0fc0c8b8f31
+acestream://a5a1d20e36cf6bdad0f549606d283690d639a5b9
 #EXTINF:-1 group-title="UFC",UFC *
 acestream://e1a3a1427d7211b5cc8f1110878bfd61388eaa8c
 #EXTINF:-1 group-title="UFC",UFC *
-acestream://b6da3c2260401aebfc57fe1873eb19b82972546f
+acestream://0aa6f665d462d8b6f3f184bfdfe1d0fc0c8b8f31
 #EXTINF:-1 group-title="UFC",UFC **
 acestream://a5135a883f4b579a0509da7e8a40aa854d2ca6ea
 
