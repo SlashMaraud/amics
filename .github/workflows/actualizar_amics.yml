@@ -1,3 +1,4 @@
+
 name: Actualizar lista AMICS desde IPFS
 
 on:
@@ -78,6 +79,40 @@ jobs:
 
           ipfs swarm peers
 
+      - name: Probar IPNS de respaldo
+        run: |
+          URL="http://127.0.0.1:8080/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.m3u"
+
+          echo "Consultando IPNS de respaldo..."
+
+          curl -fL --retry 2 --connect-timeout 15 --max-time 120 \
+            "$URL" -o /tmp/respaldo.m3u
+
+          python3 - <<'PY'
+          import re
+          from pathlib import Path
+
+          contenido = Path("/tmp/respaldo.m3u").read_text(
+              encoding="utf-8-sig",
+              errors="replace"
+          )
+
+          hashes = set(re.findall(
+              r"(?i)(?:acestream://|id=)?([a-f0-9]{40})",
+              contenido
+          ))
+
+          print("Tamaño recibido:", len(contenido), "caracteres")
+          print("Hashes encontrados:", len(hashes))
+
+          if not hashes:
+              raise SystemExit(
+                  "El respaldo no contiene hashes válidos."
+              )
+
+          print("IPNS DE RESPALDO OPERATIVO.")
+          PY
+
       - name: Ejecutar actualizador AMICS
         run: |
           python3 actualizar_amics.py
@@ -102,4 +137,3 @@ jobs:
             git commit -m "Actualizar lista AMICS desde IPFS"
             git push
           fi
-          
