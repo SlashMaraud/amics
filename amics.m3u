@@ -89,9 +89,9 @@ acestream://64c18dd07556a8e11039be1f448bd73ce9be84ee
 #EXTINF:-1 tvg-id="M+ LaLiga HD" tvg-logo="https://i.ibb.co/yfV1Q8n/liga.png" group-title="LA LIGA",M+ LaLiga 1080p **
 acestream://ab26ca2517da28f74a3ac55c5eb956d5bf8633b4
 #EXTINF:-1 tvg-id="M+ LaLiga HD" tvg-logo="https://i.ibb.co/yfV1Q8n/liga.png" group-title="LA LIGA",M+ LaLiga 1080p **
-acestream://9236afc7e7ac404577aaa20698731c71ad9b33a3
-#EXTINF:-1 tvg-id="M+ LaLiga HD" tvg-logo="https://i.ibb.co/yfV1Q8n/liga.png" group-title="LA LIGA",M+ LaLiga 1080p **
 acestream://a6c284e70d65e82171536ba58d8457e2c6fe6ff2
+#EXTINF:-1 tvg-id="M+ LaLiga HD" tvg-logo="https://i.ibb.co/yfV1Q8n/liga.png" group-title="LA LIGA",M+ LaLiga 1080p **
+acestream://9236afc7e7ac404577aaa20698731c71ad9b33a3
 #EXTINF:-1 tvg-id="M+ LaLiga 2 HD" tvg-logo="https://i.ibb.co/Tc97zSb/liga2.png" group-title="LA LIGA",M+ LaLiga 2 1080p **
 acestream://7d1db4129f77490b289ad582beb4dae4afacfc50
 #EXTINF:-1 tvg-id="M+ LaLiga 2 HD" tvg-logo="https://i.ibb.co/Tc97zSb/liga2.png" group-title="LA LIGA",M+ LaLiga 2 *
@@ -125,15 +125,15 @@ acestream://15b633cfce3658b80f11edc435ed816d81fbcbd3
 #EXTINF:-1 tvg-id="M+ Liga de Campeones 3 HD" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%203.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 3 1080p *
 acestream://bc67da5c1192f574371d6cb8922d9a4b6786395b
 #EXTINF:-1 tvg-id="M+ Liga de Campeones 3 HD" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%203.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 3 1080p **
-acestream://141c3c295b6394502ff2e2c0ad5c2d1b3cbccf8c
-#EXTINF:-1 tvg-id="M+ Liga de Campeones 3 HD" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%203.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 3 1080p **
 acestream://9c1815e5622f6c819016a1e234a4d1b853d7f170
+#EXTINF:-1 tvg-id="M+ Liga de Campeones 3 HD" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%203.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 3 1080p **
+acestream://141c3c295b6394502ff2e2c0ad5c2d1b3cbccf8c
 #EXTINF:-1 tvg-id="M+ Liga de Campeones 4" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%204.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 4 1080p *
 acestream://7fc557e2b4fd2cd54b8783e05caa05c2a92d128d
 #EXTINF:-1 tvg-id="M+ Liga de Campeones 4" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%204.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 4 1080p **
-acestream://b9a1c9715fa2a1688c78385b26189e84e75b1761
-#EXTINF:-1 tvg-id="M+ Liga de Campeones 4" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%204.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 4 1080p **
 acestream://fdc6af3f46eb9ab38b021883215d19bae7bdacbb
+#EXTINF:-1 tvg-id="M+ Liga de Campeones 4" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%204.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 4 1080p **
+acestream://b9a1c9715fa2a1688c78385b26189e84e75b1761
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%205.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 6 720p **
 acestream://b65d8bfd3326fbb0a974805598dceafaea862822
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%205.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 6 1080p **
@@ -211,9 +211,9 @@ acestream://6a8d983e427264f95610ba86af0fe1175c1d956a
 #EXTINF:-1 group-title="DEPORTES",A Punt 1080p *
 acestream://11cb71c0b92cf97d44c96bd533abdd1c8bcfdcf4
 #EXTINF:-1 group-title="DEPORTES",A Punt 1080p **
-acestream://b546c9a5998de1628afcbf73653a893294ae39c3
-#EXTINF:-1 group-title="DEPORTES",A Punt 1080p **
 acestream://8b019f0c136da2d05cd695c612ae8ea67846fcb4
+#EXTINF:-1 group-title="DEPORTES",A Punt 1080p **
+acestream://b546c9a5998de1628afcbf73653a893294ae39c3
 #EXTINF:-1 tvg-logo="https://cdn-bgp.bluestacks.com/BGP/us/gametiles_com.digiturk.ligtv.jpg" group-title="DEPORTES",Bein Sports 2 TR 1080p *
 acestream://a7184e0b4ce5484ede13841e119aedebcfd106c8
 #EXTINF:-1 tvg-logo="https://cdn-bgp.bluestacks.com/BGP/us/gametiles_com.digiturk.ligtv.jpg" group-title="DEPORTES",Bein Sports 3 TR 720p *
@@ -259,11 +259,11 @@ acestream://231eedcccf9da9ea0926b289dfdc646767fa9c7d
 #EXTINF:-1 tvg-logo="https://espnpressroom.com/us/files/2023/02/New-NBA-Logo.png" group-title="NBA",NBA ESPN 720p *
 acestream://522cf3de45d2aa4fe2182e6493bb27557218926c
 #EXTINF:-1 tvg-logo="https://www.vhv.rs/dpng/d/431-4310509_nba-league-pass-logo-png-transparent-nba-league.png" group-title="NBA",NBA League Pass 1080p *
-acestream://4ac0d23de10fcce906eb152927e124526ba07b87
+acestream://41c881384a2c74f375dd763c0e2634349dff89c4
 #EXTINF:-1 tvg-logo="https://www.vhv.rs/dpng/d/431-4310509_nba-league-pass-logo-png-transparent-nba-league.png" group-title="NBA",NBA League Pass 1080p *
 acestream://1214764fa46739d66d7f2abdc9ffc33fee691401
 #EXTINF:-1 tvg-logo="https://www.vhv.rs/dpng/d/431-4310509_nba-league-pass-logo-png-transparent-nba-league.png" group-title="NBA",NBA League Pass 1080p *
-acestream://41c881384a2c74f375dd763c0e2634349dff89c4
+acestream://4ac0d23de10fcce906eb152927e124526ba07b87
 #EXTINF:-1 tvg-logo="https://www.vhv.rs/dpng/d/431-4310509_nba-league-pass-logo-png-transparent-nba-league.png" group-title="NBA",NBA League Pass 1080p **
 acestream://f2fe6f2a10ad962a4c431010418b79b11a1b3bea
 #EXTINF:-1 tvg-logo="https://pbs.twimg.com/profile_images/1951065414118539266/9Go2oZlV_400x400.jpg" group-title="TENNIS",Sky Sport Tennis 1080p **
@@ -277,11 +277,11 @@ acestream://5402737cd38020bcccc21520494f7774de67e332
 #EXTINF:-1 group-title="UFC",UFC *
 acestream://4fbe958630154da2c5533dfeef29b0c50379ba09
 #EXTINF:-1 group-title="UFC",UFC *
-acestream://93b234910a10db4404a0649f0d50065afcfe5135
+acestream://c30a60aee5d8b3391accd2ccbea3618214b71c06
 #EXTINF:-1 group-title="UFC",UFC *
 acestream://dd75e480b208503352b9b53e24becc4557a54fc4
 #EXTINF:-1 group-title="UFC",UFC *
-acestream://c30a60aee5d8b3391accd2ccbea3618214b71c06
+acestream://93b234910a10db4404a0649f0d50065afcfe5135
 #EXTINF:-1 group-title="UFC",UFC **
 acestream://94924ac6dab26f7210fe2781625d2cf5d0b846a7
 
