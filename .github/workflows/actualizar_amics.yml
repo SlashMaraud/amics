@@ -43,42 +43,64 @@ jobs:
         run: |
           ipfs init --profile=server
 
-      - name: Arrancar nodo IPFS
+      - name: Conectar IPFS y ejecutar actualizador AMICS
         run: |
+          set -e
+
+          echo "Arrancando nodo IPFS..."
+
           ipfs daemon --enable-gc > ipfs-daemon.log 2>&1 &
-          echo $! > ipfs-daemon.pid
+          IPFS_PID=$!
+
+          trap 'kill "$IPFS_PID" 2>/dev/null || true' EXIT
+
+          echo "Esperando a que arranque el nodo..."
 
           for i in $(seq 1 30); do
-            if ipfs id >/dev/null 2>&1; then
-              echo "Nodo IPFS iniciado."
-              exit 0
+            if ipfs swarm peers >/dev/null 2>&1; then
+              echo "Nodo IPFS iniciado correctamente."
+              break
             fi
+
+            if ! kill -0 "$IPFS_PID" 2>/dev/null; then
+              cat ipfs-daemon.log
+              exit 1
+            fi
+
             sleep 2
           done
 
-          cat ipfs-daemon.log
-          exit 1
+          ipfs swarm peers >/dev/null 2>&1 || {
+            cat ipfs-daemon.log
+            echo "No se pudo iniciar el nodo IPFS."
+            exit 1
+          }
 
-      - name: Esperar conexión con la red IPFS
-        run: |
-          echo "Esperando peers..."
+          echo "Esperando conexión con la red IPFS..."
+
+          CONECTADO=0
 
           for i in $(seq 1 24); do
             PEERS=$(ipfs swarm peers | wc -l)
+
             echo "Intento $i: $PEERS peers"
 
             if [ "$PEERS" -gt 0 ]; then
-              echo "Conexión establecida."
+              CONECTADO=1
               break
             fi
 
             sleep 10
           done
 
-          ipfs swarm peers
+          if [ "$CONECTADO" -ne 1 ]; then
+            echo "No se ha conseguido conectar con peers IPFS."
+            cat ipfs-daemon.log
+            exit 1
+          fi
 
-      - name: Ejecutar actualizador AMICS
-        run: |
+          echo "Conexión IPFS establecida."
+
           python3 actualizar_amics.py
 
       - name: Validar lista generada
