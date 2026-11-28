@@ -16,9 +16,6 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
 
-    env:
-      IPFS_PATH: ${{ runner.temp }}/amics-ipfs
-
     steps:
       - name: Descargar repositorio
         uses: actions/checkout@v4
@@ -44,6 +41,9 @@ jobs:
 
       - name: Inicializar nodo IPFS
         run: |
+          export IPFS_PATH="$RUNNER_TEMP/amics-ipfs"
+          echo "IPFS_PATH=$IPFS_PATH" >> "$GITHUB_ENV"
+
           echo "Directorio IPFS: $IPFS_PATH"
 
           mkdir -p "$IPFS_PATH"
@@ -71,7 +71,6 @@ jobs:
           ARRANCADO=0
 
           for i in $(seq 1 30); do
-
             if ipfs swarm peers >/dev/null 2>&1; then
               echo "Nodo IPFS iniciado correctamente."
               ARRANCADO=1
