@@ -16,6 +16,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
 
+    env:
+      IPFS_PATH: ${{ runner.temp }}/amics-ipfs
+
     steps:
       - name: Descargar repositorio
         uses: actions/checkout@v4
@@ -41,7 +44,13 @@ jobs:
 
       - name: Inicializar nodo IPFS
         run: |
+          echo "Directorio IPFS: $IPFS_PATH"
+
+          mkdir -p "$IPFS_PATH"
+
           ipfs init --profile=server
+
+          echo "Nodo IPFS inicializado correctamente."
 
       - name: Conectar IPFS y ejecutar actualizador AMICS
         run: |
@@ -49,16 +58,23 @@ jobs:
 
           echo "Arrancando nodo IPFS..."
 
+          echo "Comprobando procesos IPFS existentes:"
+          pgrep -af '[i]pfs' || true
+
           ipfs daemon --enable-gc > ipfs-daemon.log 2>&1 &
           IPFS_PID=$!
 
-          trap 'kill "$IPFS_PID" 2>/dev/null || true' EXIT
+          trap 'kill "$IPFS_PID" 2>/dev/null || true; wait "$IPFS_PID" 2>/dev/null || true' EXIT
 
           echo "Esperando a que arranque el nodo..."
 
+          ARRANCADO=0
+
           for i in $(seq 1 30); do
+
             if ipfs swarm peers >/dev/null 2>&1; then
               echo "Nodo IPFS iniciado correctamente."
+              ARRANCADO=1
               break
             fi
 
@@ -70,11 +86,11 @@ jobs:
             sleep 2
           done
 
-          ipfs swarm peers >/dev/null 2>&1 || {
+          if [ "$ARRANCADO" -ne 1 ]; then
             cat ipfs-daemon.log
             echo "No se pudo iniciar el nodo IPFS."
             exit 1
-          }
+          fi
 
           echo "Esperando conexión con la red IPFS..."
 
